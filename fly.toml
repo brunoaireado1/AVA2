@@ -1,23 +1,22 @@
-# fly.toml app configuration file generated for aval-grup-center on 2026-10-01T00:11:12Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
-
-app = 'aval-grup-center'
-primary_region = 'ams'
-
+app = "aval-grup-center"
+primary_region = "ams"
+ 
 [build]
-
+  dockerfile = "Dockerfile"
+ 
+[env]
+  PORT = "8080"
+ 
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = 'stop'
+  auto_stop_machines = "stop"
   auto_start_machines = true
   min_machines_running = 0
-  processes = ['app']
-
+  processes = ["app"]
+ 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
+  memory = "256mb"
+  cpu_kind = "shared"
   cpus = 1
-  memory_mb = 256
+ 
